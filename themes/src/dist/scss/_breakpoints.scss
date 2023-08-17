@@ -1,0 +1,6 @@
+$media:(
+  'md': 768px
+);
+@mixin for-table{
+  @media(max-width:768px) {@content;}
+}

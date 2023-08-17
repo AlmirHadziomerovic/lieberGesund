@@ -1,0 +1,56 @@
+/*!
+Theme Name: Lieber Gesund
+Author: Almir Hadziomerovic
+Description: Lieber Gesund
+Version: 1.0.0
+text Domain: haddes
+
+*/
+
+
+@import 'colors.scss';
+@import 'media.scss';
+@import 'nav.scss';
+
+
+$max-width:1400px;
+$navbar-height-desktop:80px;
+$navbar-height-mobile:60px;
+$columns-gap:30px;
+
+
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+img{
+  max-width:100%;
+  height:auto;
+  vertical-align:bottom;
+}
+html{
+  font-size:$fontsize;
+  line-height:1.4em;
+  scroll-behavior:smooth;
+  height:1400px;
+
+}
+a:hover{
+  text-decoration: underline;
+}
+.container {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: calc(var($columns-gap) / 5);
+  padding-right: calc(var($columns-gap) / 5);
+  color: $primary_color;
+}
+.columns>.column {
+  margin-bottom: calc(var($columns-gap));
+}
+.alignfull {
+  margin-right: calc(50% - 50vw);
+  margin-left: calc(50% - 50vw);
+  max-width: 100vw;
+  width: 100vw;
+}
