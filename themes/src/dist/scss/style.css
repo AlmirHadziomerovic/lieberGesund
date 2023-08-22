@@ -42,7 +42,7 @@ text Domain: haddes
   right: 0;
   left: 0;
   z-index: 1000;
-  margin-top: 2rem;
+  border-bottom: 1px solid #9dc031;
 }
 
 #navbar .container {
@@ -353,9 +353,29 @@ input[type=checkbox] {
   transition: all 1s;
 }
 
-#nav-main {
-  transform: translateY(0%);
+@media screen and (min-width: 768px) {
+  #nav-main {
+    transform: translateY(0%);
+  }
 }
+
+#page-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(/themes/src/dist/img/);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 2.5em 1.5em;
+  line-height: 1.4;
+  text-align: center;
+  position: relative;
+  flex-direction: column;
+  margin-top: -100px;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

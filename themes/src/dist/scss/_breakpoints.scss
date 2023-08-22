@@ -1,6 +1,9 @@
-$media:(
-  'md': 768px
+$media-table: (
+        'md': 768px
 );
-@mixin for-table{
-  @media(max-width:768px) {@content;}
+
+@mixin for-table {
+  @media (max-width: map-get($media-table, 'md')) {
+    @content;
+  }
 }

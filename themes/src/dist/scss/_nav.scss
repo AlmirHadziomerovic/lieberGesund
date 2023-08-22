@@ -9,7 +9,7 @@ $columns-gap:30px;
   right: 0;
   left: 0;
   z-index: 1000;
-  margin-top:2rem;
+  border-bottom: 1px solid $primary_color;
 }
 #navbar .container {
   display: flex;
@@ -18,12 +18,14 @@ $columns-gap:30px;
   height:($navbar-height-mobile);
 }
 
+
 #navbar .container {
-  @media screen and  (min-width:768px){
+  @media screen and (min-width: 768px){
     height: $navbar-height-desktop;
 
   }
 }
+
 .brand {
   height: 100%;
   width: auto;
@@ -297,6 +299,7 @@ input[type="checkbox"] {
 
 #nav-main {
   @media screen and (min-width: 768px) {
+    transform: translateY(0%);
   }
-  transform: translateY(0%);
+
 }
