@@ -1,10 +1,9 @@
-/*!
+/*
 Theme Name: Lieber Gesund
 Author: Almir Hadziomerovic
 Description: Lieber Gesund
 Version: 1.0.0
 text Domain: haddes
-
 */
 .screen-reader-text {
   border: 0;
@@ -50,6 +49,7 @@ text Domain: haddes
   align-items: center;
   justify-content: space-between;
   height: 60px;
+  background-color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -61,6 +61,7 @@ text Domain: haddes
 .brand {
   height: 100%;
   width: auto;
+  z-index: 1000;
 }
 
 @media screen and (min-width: 768px) {
@@ -92,6 +93,7 @@ text Domain: haddes
   padding: 0;
   list-style-type: none;
   color: #ffffff;
+  background-color: #9dc031;
 }
 
 .sub-menu {
@@ -364,7 +366,7 @@ input[type=checkbox] {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-image: url(/themes/src/dist/img/);
+  background-image: url("/themes/src/dist/img/Sortiment.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -373,7 +375,7 @@ input[type=checkbox] {
   text-align: center;
   position: relative;
   flex-direction: column;
-  margin-top: -100px;
+  margin-top: 80px;
 }
 
 *, *::before, *::after {

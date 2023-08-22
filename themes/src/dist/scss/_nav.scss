@@ -16,6 +16,7 @@ $columns-gap:30px;
   align-items: center;
   justify-content: space-between;
   height:($navbar-height-mobile);
+  background-color:white;
 }
 
 
@@ -29,6 +30,7 @@ $columns-gap:30px;
 .brand {
   height: 100%;
   width: auto;
+  z-index: 1000;
 }
 
 .brand {
@@ -57,6 +59,7 @@ $columns-gap:30px;
   padding: 0;
   list-style-type: none;
   color: $secondary_color;
+  background-color:$primary_color;
 }
 .sub-menu {
   font-size: 1.2em;
@@ -84,6 +87,7 @@ $columns-gap:30px;
   overflow-y: auto;
   text-align: center;
   font-weight: 400;
+
 }
 
 .nav-menu {
@@ -114,6 +118,7 @@ $columns-gap:30px;
     font-size: clamp(12px, 1vw, 18px);
     font-family:'Racing Sans One';
     letter-spacing: 2px;
+
   }
 }
 input[type="checkbox"] {
