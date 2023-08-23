@@ -151,7 +151,7 @@ text Domain: haddes
     opacity: 1;
     pointer-events: auto;
     font-size: clamp(12px, 1vw, 18px);
-    font-family: "Racing Sans One";
+    font-family: "Alexandria";
     letter-spacing: 2px;
   }
 }
@@ -378,6 +378,14 @@ input[type=checkbox] {
   margin-top: 80px;
 }
 
+/* alexandria-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alexandria";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/themes/src/dist/font/alexandria-v3-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 *, *::before, *::after {
   box-sizing: border-box;
 }
