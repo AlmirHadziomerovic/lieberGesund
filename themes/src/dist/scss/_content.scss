@@ -2,16 +2,17 @@
   position: bottom;
   background-color: #dddddd53;
   padding: 1em 5%;
-  color: var(--navbar-bg-color);
+  color: $third_color;
+  h2 {
+    color:$primary_color;
+  }
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   .posts {
     display: flex;
     justify-content: center;
-    text-align: center;
-    vertical-align: bottom;
-    margin-top: -80px;
+    align-items: flex-end;
     gap: 1em;
     padding: 1em;
     position: relative;
@@ -19,9 +20,9 @@
     box-shadow: 10px 20px 15px silver;
     border-radius: 20px;
     cursor: pointer;
-    margin-top:2rem;
+    margin-top: 2rem;
   }
-  .post-item>.img-wrapper {
+  .post-item .img-wrapper {
     overflow: hidden;
   }
   .post-item .img-wrapper:hover img {
@@ -30,4 +31,37 @@
   .post-item .img-wrapper img {
     transition: all 0.5s;
   }
+}
+
+.post-item .content-headline {
+  position: relative;
+  display: inline-block;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.post-item .content-headline::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background-color: $primary_color;
+  bottom: -3px;
+  transition: width 0.3s ease-in-out, right 0.3s ease-in-out, left 0.3s ease-in-out;
+}
+
+.post-item .img-wrapper:hover + .content .content-headline {
+  text-decoration: none;
+}
+.post-item .img-wrapper:hover + .content .content-headline::before {
+  width: 100%;
+}
+
+.post-item:nth-child(odd) .img-wrapper:hover + .content .content-headline::before {
+  right: 0;
+  left: auto;
+}
+
+.post-item:nth-child(even) .img-wrapper:hover + .content .content-headline::before {
+  left: 0;
+  right: auto;
 }
