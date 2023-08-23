@@ -5,6 +5,12 @@ Description: Lieber Gesund
 Version: 1.0.0
 text Domain: haddes
 */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
@@ -385,6 +391,113 @@ input[type=checkbox] {
   font-style: normal;
   font-weight: 400;
   src: url("/themes/src/dist/font/alexandria-v3-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+.posts .content {
+  position: bottom;
+  background-color: rgba(221, 221, 221, 0.3254901961);
+  padding: 1em 5%;
+  color: var(--navbar-bg-color);
+}
+
+@media screen and (min-width: 768px) {
+  .posts {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: -80px;
+    gap: 1em;
+    padding: 1em;
+    position: relative;
+    z-index: 100;
+    box-shadow: 10px 20px 15px silver;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 2rem;
+  }
+  .post-item > .img-wrapper {
+    overflow: hidden;
+  }
+  .post-item .img-wrapper:hover img {
+    transform: scale(1.1);
+  }
+  .post-item .img-wrapper img {
+    transition: all 0.5s;
+  }
+}
+#page-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Cinzel Decorative";
+  font-weight: 400;
+  background-color: rgba(0, 2, 8, 0);
+  color: #000;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  border-top: solid 1px #9dc031;
+  margin-top: 2rem;
+}
+
+#page-footer ul {
+  list-style: none;
+}
+
+#page-footer a {
+  color: inherit;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#page-footer a:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+#page-footer > * {
+  padding: 0 0;
+}
+
+#page-footer .social-links {
+  list-style-type: none;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+#page-footer .social-links li, #nav-footer li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+
+#page-footer .container {
+  border-top: solid 1px rgba(0, 0, 0, 0.475);
+  margin-top: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  #page-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    border-top: solid 1px #9dc031;
+  }
+  #page-footer > * {
+    flex-grow: 1;
+    flex-basis: right;
+  }
+  #nav-footer {
+    order: 2;
+    text-align: right;
+  }
+  #page-footer .copyright {
+    order: -1;
+    text-align: left;
+    margin: 0;
+  }
 }
 *, *::before, *::after {
   box-sizing: border-box;

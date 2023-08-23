@@ -1,0 +1,33 @@
+.posts .content {
+  position: bottom;
+  background-color: #dddddd53;
+  padding: 1em 5%;
+  color: var(--navbar-bg-color);
+}
+
+@media screen and (min-width:768px) {
+  .posts {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    vertical-align: bottom;
+    margin-top: -80px;
+    gap: 1em;
+    padding: 1em;
+    position: relative;
+    z-index: 100;
+    box-shadow: 10px 20px 15px silver;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top:2rem;
+  }
+  .post-item>.img-wrapper {
+    overflow: hidden;
+  }
+  .post-item .img-wrapper:hover img {
+    transform: scale(1.1);
+  }
+  .post-item .img-wrapper img {
+    transition: all 0.5s;
+  }
+}
