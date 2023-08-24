@@ -284,19 +284,19 @@ input[type=checkbox] {
 }
 
 #nav-button-icon {
-  width: 45px;
+  width: 35px;
   height: 3px;
   background-color: #9dc031;
 }
 
 #nav-button-icon::before {
-  width: 35px;
+  width: 25px;
   height: 3px;
   background-color: #000;
 }
 
 #nav-button-icon::after {
-  width: 35px;
+  width: 40px;
   height: 3px;
   background-color: #000;
 }
@@ -340,11 +340,13 @@ input[type=checkbox] {
 #nav-toggle:checked ~ #nav-button #nav-button-icon:before {
   transform: rotate(-140deg);
   background-color: red;
+  width: 30px;
 }
 
 #nav-toggle:checked ~ #nav-button #nav-button-icon:after {
   transform: rotate(140deg);
   background-color: red;
+  width: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -406,7 +408,7 @@ input[type=checkbox] {
   .posts {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
+    align-items: flex-start;
     gap: 1em;
     padding: 1em;
     position: relative;
@@ -532,6 +534,84 @@ input[type=checkbox] {
     order: -1;
     text-align: left;
     margin: 0;
+  }
+}
+/* alexandria-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Alexandria";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/themes/src/dist/font/alexandria-v3-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+  background-color: #eee;
+  clip: auto !important;
+  clip-path: none;
+  color: #444;
+  display: block;
+  font-size: 1em;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+}
+
+#nav-main .current-menu-item > a {
+  color: red;
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 850px) {
+  #nav-main .current-menu-parent > a {
+    text-decoration: underline;
+  }
+}
+.about-headline {
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-family: "Alexandria";
+  margin-top: 4em;
+  line-height: 1em;
+}
+@media (min-width: ) {
+  .about-headline {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .webseiten {
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+    padding: 2em;
+    padding-top: 5em;
   }
 }
 *, *::before, *::after {

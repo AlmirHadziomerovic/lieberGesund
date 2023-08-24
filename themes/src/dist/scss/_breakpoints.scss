@@ -1,9 +1,21 @@
 $media-table: (
-        'md': 768px
+'md': 768px
 );
 
-@mixin for-table {
+@mixin for-tablet {
   @media (max-width: map-get($media-table, 'md')) {
+    @content;
+  }
+}
+
+
+
+$media-desktop:(
+'md': 1024px
+);
+
+@mixin for-desktop {
+  @media (min-width: map-get($media-desktop, 'lg')) {
     @content;
   }
 }
