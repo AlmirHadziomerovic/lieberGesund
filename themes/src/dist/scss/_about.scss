@@ -30,16 +30,27 @@
 
   }
 }
-
-
-
 @media screen and (min-width: 768px) {
-  .webseiten {
-    display: flex;
-    justify-content: left;
-    flex-direction: row-reverse;
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1em;
     padding: 2em;
     padding-top:5em;
 
   }
+}
+.about-item {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.about_text{
+  display:flex;
+  justify-content:center;
+  align-items: end;
+  flex-direction: column;
+  max-width:500px;
+  margin: 0 auto;
 }

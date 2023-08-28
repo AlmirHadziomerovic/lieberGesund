@@ -395,7 +395,7 @@ input[type=checkbox] {
   src: url("/themes/src/dist/font/alexandria-v3-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 .posts .content {
-  position: bottom;
+  position: absolute;
   background-color: rgba(221, 221, 221, 0.3254901961);
   padding: 1em 5%;
   color: #000;
@@ -413,7 +413,6 @@ input[type=checkbox] {
     padding: 1em;
     position: relative;
     z-index: 100;
-    box-shadow: 10px 20px 15px silver;
     border-radius: 20px;
     cursor: pointer;
     margin-top: 2rem;
@@ -460,6 +459,39 @@ input[type=checkbox] {
 .post-item:nth-child(even) .img-wrapper:hover + .content .content-headline::before {
   left: 0;
   right: auto;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+button,
+input,
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 1.7em;
+  height: 50px;
+  line-height: 50px;
+  transition: #000 200ms ease-in-out, color 200ms linear, box-shadow 200ms linear;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background-color: #9dc031;
+  color: #ffffff;
+  transition: 0.7s ease-in-out;
+}
+button:hover,
+input:hover,
+.btn:hover {
+  background-color: #9dc031;
+  letter-spacing: 2px;
+  box-shadow: 0 0 10px 0 #9dc031 inset, 0 0 10px 8px #9dc031;
 }
 
 #page-footer {
@@ -609,14 +641,30 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .webseiten {
-    display: flex;
-    justify-content: left;
-    flex-direction: row-reverse;
+  .about {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
     padding: 2em;
     padding-top: 5em;
   }
 }
+.about-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about_text {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }

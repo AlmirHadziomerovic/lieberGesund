@@ -1,5 +1,5 @@
 .posts .content {
-  position: bottom;
+  position: absolute;
   background-color: #dddddd53;
   padding: 1em 5%;
   color: $third_color;
@@ -17,7 +17,6 @@
     padding: 1em;
     position: relative;
     z-index: 100;
-    box-shadow: 10px 20px 15px silver;
     border-radius: 20px;
     cursor: pointer;
     margin-top: 2rem;
@@ -65,3 +64,35 @@
   left: 0;
   right: auto;
 }
+.actions {
+  display: flex;
+  justify-content: center;
+  margin-top:1em;
+}
+button,
+input,
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0 1.7em;
+  height: 50px;
+  line-height: 50px;
+  transition: $third_color 200ms ease-in-out, color 200ms linear, box-shadow 200ms linear;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 25px;
+  background-color: $primary_color;
+  color: $secondary_color;
+  transition: 0.7s ease-in-out;
+
+  &:hover {
+  background-color: $primary_color;
+  letter-spacing: 2px;
+  box-shadow: 0 0 10px 0 $primary_color inset, 0 0 10px 8px $primary_color;
+}
+}
+
+
