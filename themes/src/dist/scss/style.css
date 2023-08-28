@@ -394,16 +394,6 @@ input[type=checkbox] {
   font-weight: 400;
   src: url("/themes/src/dist/font/alexandria-v3-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-.posts .content {
-  position: absolute;
-  background-color: rgba(221, 221, 221, 0.3254901961);
-  padding: 1em 5%;
-  color: #000;
-}
-.posts .content h2 {
-  color: #9dc031;
-}
-
 @media screen and (min-width: 768px) {
   .posts {
     display: flex;
@@ -492,6 +482,15 @@ input:hover,
   background-color: #9dc031;
   letter-spacing: 2px;
   box-shadow: 0 0 10px 0 #9dc031 inset, 0 0 10px 8px #9dc031;
+}
+
+.posts .content {
+  background-color: rgba(221, 221, 221, 0.3254901961);
+  padding: 1em 5%;
+  color: #000;
+}
+.posts .content h2 {
+  color: #9dc031;
 }
 
 #page-footer {
@@ -613,11 +612,10 @@ img {
 }
 
 #nav-main .current-menu-item > a {
-  color: red;
-  text-decoration: underline;
+  color: #9dc031;
 }
 
-@media screen and (min-width: 850px) {
+@media screen and (min-width: 768px) {
   #nav-main .current-menu-parent > a {
     text-decoration: underline;
   }

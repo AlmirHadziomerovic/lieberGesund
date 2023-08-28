@@ -294,7 +294,8 @@ input[type="checkbox"] {
   @media screen and (min-width:768px){
     transform: translateY(-100%);
     transition: all 1.5s;
-  }
+}
+
 }
 #nav-toggle:checked~#nav-main {
   opacity: 1;
