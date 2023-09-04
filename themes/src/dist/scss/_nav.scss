@@ -10,6 +10,7 @@ $columns-gap:30px;
   left: 0;
   z-index: 1000;
   border-bottom: 1px solid $primary_color;
+
 }
 #navbar .container {
   display: flex;
@@ -17,12 +18,14 @@ $columns-gap:30px;
   justify-content: space-between;
   height:($navbar-height-mobile);
   background-color:white;
+
 }
 
 
 #navbar .container {
   @media screen and (min-width: 768px){
     height: $navbar-height-desktop;
+
 
   }
 }
@@ -87,6 +90,7 @@ $columns-gap:30px;
   overflow-y: auto;
   text-align: center;
   font-weight: 400;
+
 
 }
 
